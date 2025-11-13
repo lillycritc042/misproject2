@@ -5,9 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Career Goals - Lilly Critchley</title>
     <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* Subtitle under header */
+        .page-header p {
+            font-size: 1.2rem;
+        }
+
+        /* Career card styling like hobbies page */
+        .career-card {
+            display: flex;
+            margin-bottom: 2rem;
+        }
+
+        /* Blue line on the left of text exactly like hobbies page */
+        .career-text {
+            border-left: 5px solid #1E90FF; /* matched hobby page blue */
+            padding-left: 1rem;
+            flex: 1;
+        }
+
+        .career-text h3 {
+            margin-bottom: 0.5rem;
+        }
+
+        .career-text p {
+            margin-bottom: 0.5rem;
+            line-height: 1.5;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .career-card {
+                flex-direction: column;
+            }
+        }
+    </style>
 </head>
 <body>
-    <!-- Navigation Menu (same on all pages) -->
+    <!-- Navigation Menu -->
     <nav>
         <ul>
             <li><a href="index.html">Home</a></li>
@@ -21,15 +56,40 @@
 
     <!-- Page Header -->
     <header class="page-header">
-        <h1>Welcome To My Career Goals</h1>
+        <h1>Welcome to My Career Goals</h1>
+        <p>Here’s a closer look at the companies and positions I’m interested in pursuing</p>
     </header>
 
     <!-- Main Content -->
     <main>
-        <!-- Page-specific content -->
+        <section class="career-preview">
+
+            <!-- Company 1 -->
+            <div class="career-card">
+                <div class="career-text">
+                    <h3>Company 1: Target</h3>
+                    <p><strong>Contact Information:</strong> 1902 Miller Trunk Hwy, Duluth, MN 55811, (218) 727-8851</p>
+                    <p><strong>Why I Like This Opportunity:</strong> I am interested in working at Target because I value its focus on customer service, teamwork, and community involvement. I like that Target creates a positive shopping experience while supporting diversity, sustainability, and local programs—things I care about personally. I also appreciate the opportunities to learn and grow in roles like leadership, merchandising, or customer service. Working here would let me contribute to a company whose values align with my own while gaining meaningful experience.</p>
+                    <p><strong>Qualifications:</strong> I am qualified to work at Target because I enjoy helping people and providing excellent customer service. I work well on a team, communicate clearly, and take responsibility for my tasks. I am organized, can manage multiple tasks at once, and stay focused even in fast-paced environments. My adaptability and reliability make me confident that I can contribute positively to the Target team.</p>
+                    <p><strong>Skills & Interests Alignment:</strong> My skills and interests match Target’s needs because I enjoy helping people, working in teams, and creating positive experiences. I am organized, dependable, and adaptable, which helps me handle busy days while providing excellent service. I’m also eager to learn and grow, making me a strong fit for the Target team.</p>
+                </div>
+            </div>
+
+            <!-- Company 2 -->
+            <div class="career-card">
+                <div class="career-text">
+                    <h3>Company 2: Essentia Health</h3>
+                    <p><strong>Contact Information:</strong> E. Second Street Duluth, Minnesota 55805, (800) 242-3455</p>
+                    <p><strong>Why I Like This Opportunity:</strong> I am interested in working at Essentia Health because I value its commitment to providing high-quality patient care and promoting community health. I admire the organization’s focus on compassion, teamwork, and continuous improvement, which aligns with my own values of helping others and making a positive impact. Working at Essentia Health would allow me to contribute to a meaningful mission while gaining valuable experience in a supportive, professional environment.</p>
+                    <p><strong>Qualifications:</strong> I am qualified to work at Essentia Health due to my excellent communication skills, and commitment to providing compassionate, patient-centered care. I work well in fast-paced healthcare environments and am dedicated to supporting both patients and the team.</p>
+                    <p><strong>Skills & Interests Alignment:</strong> My skills and interests align with Essentia Health’s needs because I am passionate about patient-centered care, work well in collaborative healthcare settings, and bring strong communication and problem-solving abilities. My values support the company’s mission to provide compassionate, high-quality care.</p>
+                </div>
+            </div>
+
+        </section>
     </main>
 
-    <!-- Footer (same on all pages) -->
+    <!-- Footer -->
     <footer>
         <p>&copy; 2025 Lilly Critchley. All rights reserved.</p>
     </footer>

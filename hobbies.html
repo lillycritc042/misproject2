@@ -5,9 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hobbies - Lilly Critchley</title>
     <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* Subtitle under header */
+        .page-header p {
+            font-size: 1.2rem; /* slightly larger */
+        }
+
+        /* Ensure all hobby images are the same size and fill container */
+        .hobby-image {
+            width: 100%;
+            height: 300px; /* fixed height for all images */
+            object-fit: cover; /* fills container, cropping if needed */
+            border-radius: 10px;
+            margin-left: 1rem;
+            display: block;
+        }
+
+        /* Optional: make hobby text and image stack nicely on small screens */
+        @media (max-width: 768px) {
+            .hobby-flex {
+                flex-direction: column;
+            }
+
+            .hobby-image {
+                margin-left: 0;
+                margin-top: 1rem;
+            }
+        }
+    </style>
 </head>
 <body>
-    <!-- Navigation Menu (same on all pages) -->
+    <!-- Navigation Menu -->
     <nav>
         <ul>
             <li><a href="index.html">Home</a></li>
@@ -21,24 +49,45 @@
 
     <!-- Page Header -->
     <header class="page-header">
-        <h1>Welcome to Hobbies</h1>
+        <h1>Welcome to My Hobbies</h1>
+        <p>Here’s a closer look at the things I love to do in my free time</p>
     </header>
 
     <!-- Main Content -->
     <main>
         <section class="hobbies-preview">
-            <h2>My Interests</h2>
-            <div class="hobby-card">
-                <h3>Hobby 1: Soccer</h3>
-                <p>Soccer has always been a central part of my life. Growing up playing the game taught me discipline, teamwork, and resilience—qualities I now bring into coaching youth soccer. I love being able to give back to the sport by helping young players grow both on and off the field. Whether I’m playing or coaching, soccer continues to be a lifelong passion that keeps me connected to a strong community and a game I’ll love forever.</p>
 
-                <h3>Hobby 2: Outdoor Adventures</h3>
-                <p>Spending time outdoors is one of my favorite ways to recharge. I enjoy going for walks, hiking local trails, and relaxing at the beach whenever I can. In the winter, I love downhill skiing at Spirit Mountain—it’s something I look forward to every season. Whether it's a quiet hike or a day on the slopes, being in nature gives me a sense of balance and perspective.</p>
+            <!-- Hobby 1: Soccer -->
+            <div class="hobby-card hobby-flex">
+                <div class="hobby-text">
+                    <h3>Soccer</h3>
+                    <p>Soccer has been a part of my life for as long as I can remember. I grew up with a ball at my feet—playing in the backyard, at school, and eventually on competitive teams. During my senior year, I had the honor of being a team captain, and that season we made it all the way to the section championship, which was one of the most memorable moments of my soccer journey. Now, I’ve come full circle by coaching youth soccer, helping young players learn the game that’s given me so much. Watching them grow in skill and confidence reminds me why I fell in love with soccer in the first place. It’s a sport that has shaped who I am, and it’s something I know I’ll love for the rest of my life.</p>
+                </div>
+                <img src="images/soccer.jpg" alt="Playing soccer" class="hobby-image">
             </div>
+
+            <!-- Hobby 2: Outdoor Adventures -->
+            <div class="hobby-card hobby-flex">
+                <div class="hobby-text">
+                    <h3>Outdoor Adventures</h3>
+                    <p>Spending time outdoors has always been one of my favorite ways to recharge. I love hiking local trails in the summer, exploring the woods, and spending quiet afternoons by the lake. When winter comes, skiing at Spirit Mountain is one of my favorite ways to get outside and stay active, even in the cold Minnesota weather. It’s something I enjoy doing with friends. We’ll spend the day on the slopes, and warm up in the chalet with hot chocolate. No matter the season, being outdoors helps me slow down and reset. Whether it’s a quick walk, a hike, or a weekend ski trip, those moments in nature always bring me a sense of peace and balance.</p>
+                </div>
+                <img src="images/Spirit Mountain.jpg" alt="Outdoor adventures" class="hobby-image">
+            </div>
+
+            <!-- Hobby 3: Traveling -->
+            <div class="hobby-card hobby-flex">
+                <div class="hobby-text">
+                    <h3>Traveling</h3>
+                    <p>Traveling has always been one of my biggest passions because it lets me explore new places, cultures, and foods. I love planning trips—whether it’s a quick weekend getaway or an adventure somewhere far from home. Some of my favorite memories come from traveling during spring break with my family. I cherish spending time with family, discovering new places, and seeing how different life can be in each place I visit. Traveling has taught me to be adaptable and open-minded, and it always leaves me feeling inspired. Whether I’m wandering through city streets, hiking scenic trails, or trying local dishes, every trip gives me a deeper appreciation for the diversity and beauty of the world around me.</p>
+                </div>
+                <img src="images/bahamas.jpg" alt="Traveling to new places" class="hobby-image">
+            </div>
+
         </section>
     </main>
 
-    <!-- Footer (same on all pages) -->
+    <!-- Footer -->
     <footer>
         <p>&copy; 2025 Lilly Critchley. All rights reserved.</p>
     </footer>
